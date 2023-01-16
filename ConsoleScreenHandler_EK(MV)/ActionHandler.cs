@@ -15,7 +15,7 @@ public class ActionHandler
         {
             Console.Clear();
             Console.WriteLine("Listing's code: ");
-            string listingCode = Console.ReadLine();
+            string listingCode = Console.ReadLine().ToLower();
             if (screen.Listing != null)
             {
                 if(screen.Listing.Where(l => l.ListingCode == listingCode).ToList().Count() == 0)

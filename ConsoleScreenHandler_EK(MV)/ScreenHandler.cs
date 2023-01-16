@@ -61,9 +61,9 @@ public class ScreenHandler
             else if (screen.Fields != null)
             {
                 Console.WriteLine("Actions: ");
-                foreach(var action in screen.Actions)
+                foreach(var field in screen.Fields)
                 {
-                    Console.WriteLine("({0}) {1}", action.Option, action.Name);
+                    Console.WriteLine("({0}) {1}", field.Code, field.Desc);
                 }
                 string choice = Console.ReadLine()[0].ToString();
                 if (string.Equals(choice, screen.Actions.Where(s => s.Option.ToString() == choice).First().Option.ToString()))
