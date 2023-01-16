@@ -9,6 +9,7 @@
     <Title>ConsoleScreenHandler-EK-MV</Title>
     <Company>$(Authors)</Company>
     <PackageId>ConsoleScreenHandler-EK-MV</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
